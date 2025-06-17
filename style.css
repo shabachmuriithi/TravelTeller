@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    /* color: rgba(228, 142, 29, 0.801); */
+}
+.paper {
+  position: absolute;
+  width: 40px;
+  height: 50px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
+  opacity: 0.9;
+  animation: fall 3s linear forwards;
+}
+
+.plane {
+  position: absolute;
+  font-size: 2rem; /* Adjust size as needed */
+  animation: flyDown 3s linear forwards;
+  opacity: 0.9;
+}
+
+@keyframes flyDown {
+  0% {
+    transform: translateY(-60px) rotate(-20deg) scale(1);
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(20deg) scale(1.2);
+    opacity: 0.7;
+  }
+}
+#destinations a{
+    text-decoration: none;
+    color: white;
+}
