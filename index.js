@@ -24,22 +24,10 @@ intro.style.textAlign= "center"
 intro.style.margin = "10px"
 intro.style.height = "100px"
 
-window.addEventListener('DOMContentLoaded', function() {
-  const container = document.getElementById('planes-container');
-  for (let i = 0; i < 50; i++) {
-    const plane = document.createElement('span');
-    plane.className = 'plane';
-    plane.textContent = '✈️';
-    plane.style.left = Math.random() * 95 + 'vw';
-    plane.style.animationDelay = (Math.random() * 1.5) + 's';
-    container.appendChild(plane);
-    plane.addEventListener('animationend', () => plane.remove());
-  }
-});
 
 const imgContainer = document.createElement('div');
 imgContainer.style.display = 'flex';
-imgContainer.style.flexWrap = 'wrap';
+// imgContainer.style.flexWrap = 'wrap';
 imgContainer.style.gap = '12px';
 imgContainer.style.justifyContent = 'center';
 
@@ -51,13 +39,13 @@ const images = [
   'https://media.istockphoto.com/id/515161366/photo/sunrise-behind-mt-kenya.jpg?s=612x612&w=0&k=20&c=HholJet9EY-s9c4Fst7iF8TetXVvuUNHoUp5DnHZV_M='
 ];
 
-//adding images
+
 images.forEach(src => {
   const img = document.createElement('img');
   img.src = src;
   img.alt = 'cities';
-  img.style.width = '800px';
-  img.style.height = '400px';
+  img.style.width = '300px';
+  img.style.height = '200px';
   img.style.objectFit = 'fit';
   imgContainer.appendChild(img);
 });
