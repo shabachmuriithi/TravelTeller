@@ -9,7 +9,7 @@ const headerTitle = document.createElement('h2');
 headerTitle.textContent = "Enjoy your trip";
 header.appendChild(headerTitle);    
 
-const intro = document.getElementById('intro')
+const intro=document.getElementById('intro')
 const introGreeting = document.createElement('h3');
 introGreeting.textContent = "Welcome to your virtual trip planner";
 intro.appendChild(introGreeting);
